@@ -612,7 +612,17 @@ text {
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
+  transition-timing-function: linear;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
+}
+
+.transition-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.transition-wrapper .list-row {
+  position: absolute;
 }
